@@ -1,5 +1,7 @@
 # Iznogood
 
+*This write-up is for the "IZNOGOOD" challenge of FCSC 2022. Two files are given: a python script and an output.*
+
 A poor intern had the very bad idea to implement its own cryptography. How can we prove him this is a bad idea?
 
 ## Understanding the Cipher
@@ -405,7 +407,8 @@ $ time ./chal_iznogood
 ...
 ```
 
-![[Pasted image 20220508174029.jpg]]
+![Image](res/a-few-moments-later.jpg)
+
 ```
 $ time ./chal_iznogood
 [14, 9, 5, 4, 5, 10, 15, ], [1, 8, 13, 12, 10, 14, 14, 0, 11, 8, 15, 14, 14, 11, 13, 9, 10, 0, 11, 13, 10, 9, 3, 8, 11, 8, 12, 5, 4, 9, 2, 5, ]
