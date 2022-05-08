@@ -1,6 +1,6 @@
 # Iznogood
 
-*This write-up is for the "IZNOGOOD" challenge of FCSC 2022. Two files are given: a python script and an output.*
+*This write-up is for the "IZNOGOOD" challenge of [FCSC 2022](https://france-cybersecurity-challenge.fr). Two files are given: a python script and an output.*
 
 A poor intern had the very bad idea to implement its own cryptography. How can we prove him this is a bad idea?
 
