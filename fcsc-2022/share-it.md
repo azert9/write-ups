@@ -1,4 +1,7 @@
 # Share It
+
+*This write-up is for the "Share It" challenge of [FCSC 2022](https://france-cybersecurity-challenge.fr). Two files are given: a binary and an output.*
+
 Scrooge McDuck made a good decision by choosing a an encryption software developed by the ANSSI. But greed is the root of all evil... By trying to optimize the code, he actually introduced a mortal flaw, that we are going to exploit.
 
 ## Understanding the Code
@@ -173,15 +176,15 @@ The next step is to understand what is different between our binary and the orig
 
 After opening our favorite reverse engineering software, we find that `_sss_derive_seed()` has an additional parameter:
 
-![[2022-05-08_16-02.png]]
+![Image](res/2022-05-08_16-02.png)
 
 We decide to call it `micro_seed`, because it is small and generated randomly in `_sss_raw_generate`.
 
-![[2022-05-08_16-24.png]]
+![Image](res/2022-05-08_16-24.png)
 
 So, what is the purpose of this parameter? This is the body of `_sss_derive_seed()`:
 
-![[2022-05-08_16-09.png]]
+![Image](res/2022-05-08_16-09.png)
 
 Let's break it down:
 * A temporary variable `a` is created as a number in our finite field.
